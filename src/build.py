@@ -32,7 +32,7 @@ EQUIPO = [
      "hace": ["Debrief de la cena y agradecimiento a los 12", "Parrilla y compras (con Pablo)", "DJ y audiovisual",
               "Montaje y logística VIP del 14", "Cierre de cuentas y retro"]},
 ]
-EQUIPO_NOTA = ("Cada tarea tiene un solo responsable. Cuando dice «participan los 3», el que lidera se asegura de que se haga. Las decisiones importantes se toman entre los 3.")
+EQUIPO_NOTA = ("Cada tarea tiene un solo responsable. Cuando dice «Lidera X · con los 3», el que lidera se asegura de que se haga. Las decisiones importantes se toman entre los 3.")
 
 LINEAS = [
     {"id": "base", "nombre": "Konecta (identidad)"},

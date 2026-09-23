@@ -20,7 +20,7 @@ _Borrador: lo validan los 3._
 
 ## Equipo
 
-Cada tarea tiene un solo responsable. Cuando dice «participan los 3», el que lidera se asegura de que se haga. Las decisiones importantes se toman entre los 3.
+Cada tarea tiene un solo responsable. Cuando dice «Lidera X · con los 3», el que lidera se asegura de que se haga. Las decisiones importantes se toman entre los 3.
 
 **Sebastián · Fundador · CEO**: La cara y la voz de Konecta
 
