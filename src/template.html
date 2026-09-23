@@ -87,6 +87,7 @@ nav.jump a:hover{border-color:var(--accent);color:var(--accent)}
 .task.done .t{color:var(--muted);text-decoration:line-through}
 .meta{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;margin-top:4px;font-size:13px;color:var(--muted)}
 .who{display:inline-flex;align-items:center;gap:5px;font-weight:700;color:var(--p)}
+.with{font-size:12px;color:var(--muted);white-space:nowrap}
 .who::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--p)}
 .hc{display:none;margin-top:6px;font-size:14px;background:var(--soft);border-radius:10px;padding:8px 12px}
 .task.open .hc{display:block}
@@ -223,7 +224,11 @@ const fmt = s => { const d = D(s); return `${DOW[d.getDay()]} ${d.getDate()} ${M
 const fmtR = (a, b) => a === b ? fmt(a) : `${D(a).getDate()}${D(a).getMonth() !== D(b).getMonth() ? " " + MES[D(a).getMonth()] : ""} – ${D(b).getDate()} ${MES[D(b).getMonth()]}`;
 const now = new Date(), TODAY = new Date(now.getFullYear(), now.getMonth(), now.getDate());
 const N = DATA.nombre;
-const who = (id, pre = "") => id ? `<span class="who" style="--p:var(--p-${id.split("+")[0]})">${pre}${esc(N[id])}</span>` : "";
+const who = (id, pre = "") => {
+  if (!id) return "";
+  const lead = id.endsWith("*"), k = id.replace("*", "");
+  return `<span class="who" style="--p:var(--p-${k.split("+")[0]})">${lead ? "Lidera " : pre}${esc(N[k])}</span>${lead ? '<span class="with">· con los 3</span>' : ""}`;
+};
 const all = DATA.semanas.flatMap(s => s.tareas);
 const tasks = all.filter(t => t[1] !== "hito"), hitos = all.filter(t => t[1] === "hito");
 const mine = id => tasks.filter(t => t[5].split("+").includes(id) || t[5] === "los3");
@@ -266,7 +271,7 @@ function weeks() {
       : `<div class="task${S.done[t[0]] ? " done" : ""}${S.open[t[0]] ? " open" : ""}" data-id="${t[0]}">
           <input type="checkbox" data-id="${t[0]}" ${S.done[t[0]] ? "checked" : ""} aria-label="Marcar lista">
           <div class="body"><span class="t">${ph(t[2])}</span>
-            <div class="meta">${who(t[5])}${t[6] ? `<span>apoya ${esc(N[t[6]])}</span>` : ""}<span>${fmtR(t[3], t[4])}</span><span class="more">${S.open[t[0]] ? "ocultar" : "hecho cuando…"}</span></div>
+            <div class="meta">${t[6] === "los3" ? who(t[5] + "*") : who(t[5])}<span>${fmtR(t[3], t[4])}</span><span class="more">${S.open[t[0]] ? "ocultar" : "hecho cuando…"}</span></div>
             <div class="hc">✅ <b>Hecho cuando:</b> ${ph(t[7])}</div></div></div>`).join("");
     const hasTasks = rows.some(t => t[1] !== "hito");
     return `<div class="card week${i === cur ? " now" : ""}"><div class="week-h"><b>${esc(s.titulo)}${i === cur ? '<span class="tag">ESTA SEMANA</span>' : ""}</b><span class="r">${esc(s.rango)}</span></div>${body}${hasTasks ? "" : '<div class="empty">Sin tareas para esta persona esta semana.</div>'}</div>`;
@@ -318,7 +323,7 @@ function evd() {
 $("#crit").innerHTML = DATA.criterios.map(([a, b], i) => `<div class="${i === 4 ? "key" : ""}"><b>${esc(a)}.</b> ${esc(b)}</div>`).join("");
 
 $("#caminoList").innerHTML = DATA.camino.map(([w, q, n]) => `<li class="${n === "estimado" ? "est" : ""}"><div class="w">${esc(w)}</div><div>${ph(q)}</div><div class="n">${esc(n)}</div></li>`).join("");
-$("#reunionesList").innerHTML = DATA.reuniones.map(([a, b, o]) => `<li><b>${esc(a)}</b><span class="x">${ph(b)}</span>${who(o, "prepara ")}</li>`).join("");
+$("#reunionesList").innerHTML = DATA.reuniones.map(([a, b, o]) => `<li><b>${esc(a)}</b><span class="x">${ph(b)}</span>${who(o)}</li>`).join("");
 $("#pend").innerHTML = DATA.pendientes.map(p => `<mark>${esc(p.replace(/[\[\]]/g, ""))}</mark>`).join("");
 
 function refresh() { progress(); gantt(); team(); }

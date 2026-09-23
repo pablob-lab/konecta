@@ -20,29 +20,33 @@ _Borrador: lo validan los 3._
 
 ## Equipo
 
-Las decisiones importantes se toman entre los 3. Sebastián lidera y representa a Konecta; Pablo y Emilio ejecutan el resto.
+Cada tarea tiene un solo responsable. Cuando dice «participan los 3», el que lidera se asegura de que se haga. Las decisiones importantes se toman entre los 3.
 
 **Sebastián · Fundador · CEO**: La cara y la voz de Konecta
 
 - Reserva en Lala y confirma a los 12 de la cena
 - Guía la dinámica de la cena
+- Lidera el perfil de invitado, la misión/visión/valores y el mensaje
 - Invitados especiales
-- Cobro por Yape y confirmaciones del lanzamiento
+- Cobro por Yape y confirmaciones
+- El 14: recibe a los invitados y da el mensaje
 - Publica el contenido del evento
 
 **Pablo · Socio · CRO**: Crecimiento y cierre
 
-- Lugar de la parrillada
-- Entradas VIP con el Perú Business Fest
+- Lugar de la parrillada y entradas VIP del Business Fest
 - Parrilla y compras (con Emilio)
-- Sheet de invitados y conteo semanal de afiliados
-- Afiliar a los interesados
+- Lidera los candidatos, el cierre de la lista y la meta de 10 afiliados
+- Sheet al día y conteo de cada lunes
+- Agradece a los asistentes y afilia a los interesados
 
-**Emilio · Socio · [COO – POR CONFIRMAR]**: Operación y cierre
+**Emilio · Socio · [COO – POR CONFIRMAR]**: Operación y experiencia
 
-- Debrief al salir de la cena
+- Debrief de la cena y agradecimiento a los 12
 - Parrilla y compras (con Pablo)
-- Cierre de cuentas del evento
+- DJ y audiovisual
+- Montaje y logística VIP del 14
+- Cierre de cuentas y retro
 
 ## Ojo
 
@@ -55,12 +59,12 @@ Las decisiones importantes se toman entre los 3. Sebastián lidera y representa 
 | ✓ | Tarea | Responsable | Fechas | Hecho cuando |
 |---|---|---|---|---|
 | ☐ | Reservar Lala para 12 y confirmar hora y menú | Sebastián | 2026-09-22 → 2026-09-24 | Reserva confirmada por escrito con hora [HORA CENA]. |
-| ☐ | Definir el perfil de invitado y afiliado | Los 3 | 2026-09-22 → 2026-09-24 | Criterios acordados (ver sección Eventos). |
-| ☐ | Validar misión, visión y valores | Los 3 | 2026-09-23 → 2026-09-28 | Los 3 aprueban el texto final (hoy es un borrador). |
+| ☐ | Definir el perfil de invitado y afiliado | Sebastián (lidera, participan los 3) | 2026-09-22 → 2026-09-24 | Criterios acordados (ver sección Eventos). |
+| ☐ | Validar misión, visión y valores | Sebastián (lidera, participan los 3) | 2026-09-23 → 2026-09-28 | Los 3 aprueban el texto final (hoy es un borrador). |
 | ☐ | Cerrar el lugar de la parrillada | Pablo | 2026-09-22 → 2026-09-29 | Lugar confirmado: [LUGAR]. |
 | ☐ | Cerrar las entradas VIP con el Perú Business Fest | Pablo | 2026-09-22 → 2026-09-29 | Acuerdo con cantidad de entradas y cómo se entregan. |
 | ☐ | Confirmar a los 12 de la cena en Lala | Sebastián | 2026-09-23 → 2026-09-29 | 12 confirmados, con nombre en el Sheet. |
-| ☐ | Cargar 20 candidatos por socio en el Sheet | Los 3 | 2026-09-24 → 2026-09-30 | Cada socio tiene 20 nombres en el Sheet. |
+| ☐ | Cargar 20 candidatos por socio en el Sheet | Pablo (lidera, participan los 3) | 2026-09-24 → 2026-09-30 | Cada socio tiene 20 nombres en el Sheet. |
 | ☐ | Reconfirmar a los invitados especiales para el 14 oct | Sebastián | 2026-09-22 → 2026-10-09 | Cada invitado especial confirmó o declinó. |
 
 ## Semana 2 · La cena (28 sep – 4 oct)
@@ -71,35 +75,35 @@ Las decisiones importantes se toman entre los 3. Sebastián lidera y representa 
 | ◆ | **Cena Konecta en Lala** | | 2026-10-01 | |
 | ☐ | Guiar la dinámica de la cena (sin pitch ni temas comerciales) | Sebastián | 2026-10-01 → 2026-10-01 | La cena fluyó como siempre. |
 | ☐ | Debrief de 15 min al salir de la cena | Emilio | 2026-10-01 → 2026-10-01 | Notas de qué preservar, compartidas con los 3. |
-| ☐ | Cerrar la lista del lanzamiento | Los 3 | 2026-10-01 → 2026-10-02 | Lista final marcada en el Sheet. |
-| ☐ | Agradecer a los 12 de la cena | Los 3 | 2026-10-02 → 2026-10-02 | Cada uno de los 12 recibió un mensaje. |
+| ☐ | Cerrar la lista del lanzamiento | Pablo (lidera, participan los 3) | 2026-10-01 → 2026-10-02 | Lista final marcada en el Sheet. |
+| ☐ | Agradecer a los 12 de la cena | Emilio (lidera, participan los 3) | 2026-10-02 → 2026-10-02 | Cada uno de los 12 recibió un mensaje. |
 
 ## Semana 3 · Preparar (5 – 11 oct)
 
 | ✓ | Tarea | Responsable | Fechas | Hecho cuando |
 |---|---|---|---|---|
-| ◆ | **Meta: 10 afiliados (los 3)** | | 2026-10-05 | |
+| ◆ | **Meta: 10 afiliados (lidera Pablo)** | | 2026-10-05 | |
 | ☐ | Confirmaciones y cobro de tickets | Sebastián | 2026-10-05 → 2026-10-09 | Confirmados con Yape recibido, marcado en el Sheet. |
 | ☐ | Mantener el Sheet al día y pasar el conteo de afiliados cada lunes | Pablo | 2026-09-28 → 2026-10-18 | Conteo enviado cada lunes al grupo de socios. |
-| ☐ | Escribir el mensaje: plan a dic 2026 + visión 2027 (máx. 10 min) | Los 3 | 2026-10-02 → 2026-10-09 | Texto acordado por los 3. |
+| ☐ | Escribir el mensaje: plan a dic 2026 + visión 2027 (máx. 10 min) | Sebastián (lidera, participan los 3) | 2026-10-02 → 2026-10-09 | Texto acordado por los 3. |
 | ☐ | Parrilla: quién cocina, proveedor y compras (jue 8 es feriado) | Pablo y Emilio | 2026-10-01 → 2026-10-09 | Proveedor o cocinero confirmado y compras hechas. |
-| ☐ | DJ y cobertura audiovisual: confirmar o descartar | Los 3 | 2026-10-01 → 2026-10-07 | Confirmado o descartado. |
+| ☐ | DJ y cobertura audiovisual: confirmar o descartar | Emilio (lidera, participan los 3) | 2026-10-01 → 2026-10-07 | Confirmado o descartado. |
 
 ## Semana 4 · Lanzamiento (12 – 18 oct)
 
 | ✓ | Tarea | Responsable | Fechas | Hecho cuando |
 |---|---|---|---|---|
-| ☐ | Montaje y compras finales | Los 3 | 2026-10-12 → 2026-10-13 | Todo listo en el lugar el 13 en la noche. |
+| ☐ | Montaje y compras finales | Emilio (lidera, participan los 3) | 2026-10-12 → 2026-10-13 | Todo listo en el lugar el 13 en la noche. |
 | ◆ | **Lanzamiento Konecta** | | 2026-10-14 | |
-| ☐ | Recibir a cada invitado | Los 3 | 2026-10-14 → 2026-10-14 | Cada invitado fue recibido personalmente. |
-| ☐ | Dar el mensaje del lanzamiento | Los 3 | 2026-10-14 → 2026-10-14 | Mensaje dado, máximo 10 min. |
-| ☐ | Logística del VIP en el Business Fest y traslado a la parrillada | Los 3 | 2026-10-14 → 2026-10-14 | Todos llegaron a la parrillada. |
+| ☐ | Recibir a cada invitado | Sebastián (lidera, participan los 3) | 2026-10-14 → 2026-10-14 | Cada invitado fue recibido personalmente. |
+| ☐ | Dar el mensaje del lanzamiento | Sebastián (lidera, participan los 3) | 2026-10-14 → 2026-10-14 | Mensaje dado, máximo 10 min. |
+| ☐ | Logística del VIP en el Business Fest y traslado a la parrillada | Emilio (lidera, participan los 3) | 2026-10-14 → 2026-10-14 | Todos llegaron a la parrillada. |
 | ☐ | Fotos y video del evento (solo con consentimiento) | Diego (por cuadrar) | 2026-10-14 → 2026-10-14 | Cobertura cuadrada con Diego. |
-| ☐ | Agradecer a cada asistente (≤24 h) | Los 3 | 2026-10-15 → 2026-10-15 | Mensaje personal a cada asistente. |
+| ☐ | Agradecer a cada asistente (≤24 h) | Pablo (lidera, participan los 3) | 2026-10-15 → 2026-10-15 | Mensaje personal a cada asistente. |
 | ☐ | Afiliar a los interesados | Pablo | 2026-10-15 → 2026-10-18 | Interesados en estado Afiliado en el Sheet. |
 | ☐ | Cierre de cuentas del evento | Emilio | 2026-10-16 → 2026-10-16 | Ingresos y gastos cuadrados y compartidos. |
 | ☐ | Publicar las fotos y el contenido del evento | Sebastián | 2026-10-15 → 2026-10-18 | Material publicado con consentimiento de los que aparecen. |
-| ☐ | Retro de los 3 | Los 3 | 2026-10-16 → 2026-10-16 | Acuerdos anotados para las próximas 6 semanas. |
+| ☐ | Retro de los 3 | Emilio (lidera, participan los 3) | 2026-10-16 → 2026-10-16 | Acuerdos anotados para las próximas 6 semanas. |
 
 ## Cena Konecta en Lala (2026-10-01)
 
@@ -109,7 +113,7 @@ Que Pablo viva la dinámica y cerrar la lista del lanzamiento. La afiliación se
 
 - [ ] Reservar Lala (hora y menú) (Sebastián)
 - [ ] Confirmar a los 12 (Sebastián)
-- [ ] Definir el perfil de invitado (Los 3)
+- [ ] Definir el perfil de invitado (Sebastián, con los 3)
 
 **Durante**
 
@@ -118,8 +122,8 @@ Que Pablo viva la dinámica y cerrar la lista del lanzamiento. La afiliación se
 **Después**
 
 - [ ] Debrief de 15 min al salir (Emilio)
-- [ ] Cerrar la lista del lanzamiento (Los 3)
-- [ ] Agradecer a los 12 (Los 3)
+- [ ] Cerrar la lista del lanzamiento (Pablo, con los 3)
+- [ ] Agradecer a los 12 (Emilio, con los 3)
 
 ## Lanzamiento Konecta (2026-10-14)
 
@@ -130,25 +134,25 @@ Presentar Konecta y su plan. La afiliación se da de forma orgánica, sin presi�
 - [ ] Entradas VIP con el Business Fest (Pablo)
 - [ ] Lugar de la parrillada (Pablo)
 - [ ] Cobro por Yape y confirmaciones (Sebastián)
-- [ ] Mensaje del lanzamiento escrito (Los 3)
+- [ ] Mensaje del lanzamiento escrito (Sebastián, con los 3)
 - [ ] Parrilla y compras (Pablo y Emilio)
-- [ ] DJ y audiovisual: sí o no (Los 3)
-- [ ] Montaje (Los 3)
+- [ ] DJ y audiovisual: sí o no (Emilio, con los 3)
+- [ ] Montaje (Emilio, con los 3)
 
 **Durante**
 
-- [ ] Recibir a cada invitado (Los 3)
-- [ ] VIP en el Business Fest → traslado a la parrillada (Los 3)
-- [ ] Mensaje del lanzamiento (máx. 10 min) (Los 3)
+- [ ] Recibir a cada invitado (Sebastián, con los 3)
+- [ ] VIP en el Business Fest → traslado a la parrillada (Emilio, con los 3)
+- [ ] Mensaje del lanzamiento (máx. 10 min) (Sebastián, con los 3)
 - [ ] Fotos y video con consentimiento (Diego (por cuadrar))
 
 **Después**
 
-- [ ] Agradecimiento personal (≤24 h) (Los 3)
+- [ ] Agradecimiento personal (≤24 h) (Pablo, con los 3)
 - [ ] Afiliar a los interesados (Pablo)
 - [ ] Cierre de cuentas (Emilio)
 - [ ] Publicar el contenido (Sebastián)
-- [ ] Retro de los 3 (Los 3)
+- [ ] Retro de los 3 (Emilio, con los 3)
 
 ## Criterios para invitar
 
@@ -172,11 +176,11 @@ Presentar Konecta y su plan. La afiliación se da de forma orgánica, sin presi�
 
 ## Reuniones de los 3
 
-- **mié 23 sep**: Arranque (prepara: Los 3)
-- **lun 28 sep**: Listas, ticket y misión/visión final (prepara: Los 3)
-- **lun 5 oct**: ¿Llegamos a 10 afiliados? (prepara: Los 3)
-- **vie 9 oct**: Todo listo para el 14 (prepara: Los 3)
-- **vie 16 oct**: Retro (prepara: Los 3)
+- **mié 23 sep**: Arranque (lidera: Sebastián, participan los 3)
+- **lun 28 sep**: Listas, ticket y misión/visión final (lidera: Pablo, participan los 3)
+- **lun 5 oct**: ¿Llegamos a 10 afiliados? (lidera: Pablo, participan los 3)
+- **vie 9 oct**: Todo listo para el 14 (lidera: Emilio, participan los 3)
+- **vie 16 oct**: Retro (lidera: Emilio, participan los 3)
 
 ## Falta definir
 
