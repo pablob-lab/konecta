@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Konecta · Plan</title>
+<style>
+:root{--bg:#f7f5f0;--card:#fff;--soft:#f1eee7;--text:#1d1b18;--muted:#6f695f;--line:#e6e1d7;--accent:#1f6b5a;--accent-soft:#e3f1ec;--ok:#1f7a4d;--today:#d8453b;--ph:#fff0a3;--ph-ink:#4d3c00;--warn:#fff7e0;--warn-line:#f0d58a;
+--c-cena:#c7703a;--c-com:#2f8a76;--c-evt:#c9415f;--c-pit:#6a5ad0;--c-post:#3f78c0;--c-hito:#1d1b18}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141311;--card:#1d1c19;--soft:#26241f;--text:#eeeae2;--muted:#a39d92;--line:#34312b;--accent:#63c4ad;--accent-soft:#1e332d;--ok:#5fd29a;--today:#ff6b60;--ph:#4d3e00;--ph-ink:#ffe27a;--warn:#2a2412;--warn-line:#5c4a18;
+--c-cena:#e8905a;--c-com:#52b9a2;--c-evt:#ee6d8a;--c-pit:#998bf3;--c-post:#6ea5ea;--c-hito:#eeeae2}}
+:root[data-theme="dark"]{--bg:#141311;--card:#1d1c19;--soft:#26241f;--text:#eeeae2;--muted:#a39d92;--line:#34312b;--accent:#63c4ad;--accent-soft:#1e332d;--ok:#5fd29a;--today:#ff6b60;--ph:#4d3e00;--ph-ink:#ffe27a;--warn:#2a2412;--warn-line:#5c4a18;
+--c-cena:#e8905a;--c-com:#52b9a2;--c-evt:#ee6d8a;--c-pit:#998bf3;--c-post:#6ea5ea;--c-hito:#eeeae2}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:28px 16px 64px}
+h1{font-size:34px;letter-spacing:-.02em;margin:0}
+h1 span{color:var(--accent)}
+h2{font-size:21px;margin:40px 0 14px}
+.sub{color:var(--muted);margin:2px 0 22px}
+mark{background:var(--ph);color:var(--ph-ink);border-radius:4px;padding:0 .25em;font-weight:600}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
+.events{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.ev .when{font-size:13px;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.04em}
+.ev .name{font-size:19px;font-weight:700;margin:4px 0 2px;line-height:1.25}
+.ev .det{font-size:14px;color:var(--muted)}
+.ev .left{display:inline-block;margin-top:10px;background:var(--accent-soft);color:var(--accent);font-weight:700;font-size:14px;border-radius:99px;padding:3px 12px}
+.progress{margin-top:12px;display:flex;align-items:center;gap:12px;font-size:15px}
+.bar{flex:1;height:10px;border-radius:99px;background:var(--soft);overflow:hidden}
+.bar i{display:block;height:100%;background:var(--ok);width:0;transition:width .3s}
+.ojo{background:var(--warn);border:1px solid var(--warn-line);border-radius:14px;padding:12px 16px;margin-top:12px}
+.ojo b{display:block;margin-bottom:4px}
+.ojo ul{margin:0;padding-left:20px}
+.ojo li{margin:3px 0;font-size:15px}
+.week{margin-bottom:12px;padding:6px 0}
+.week-h{display:flex;justify-content:space-between;align-items:baseline;gap:10px;padding:10px 18px 6px}
+.week-h b{font-size:17px}
+.week-h span{color:var(--muted);font-size:14px;white-space:nowrap}
+.week.now{border:2px solid var(--accent)}
+.tag{background:var(--accent);color:#fff;font-size:11px;font-weight:700;border-radius:99px;padding:2px 8px;margin-left:6px;vertical-align:2px}
+.task{display:flex;align-items:center;gap:14px;padding:12px 18px;border-top:1px solid var(--line);cursor:pointer;user-select:none}
+.task input{width:24px;height:24px;flex:0 0 auto;accent-color:var(--ok);cursor:pointer;margin:0}
+.task .t{flex:1}
+.task .d{font-size:13px;color:var(--muted);white-space:nowrap}
+.task .dot{width:9px;height:9px;border-radius:50%;flex:0 0 auto;background:var(--c)}
+.task.done .t{color:var(--muted);text-decoration:line-through}
+.hito{display:flex;align-items:center;gap:14px;padding:12px 18px;border-top:1px solid var(--line);background:var(--soft);font-weight:700}
+.hito .dia{width:14px;height:14px;transform:rotate(45deg);background:var(--c-hito);margin:0 5px;flex:0 0 auto}
+.hito .d{margin-left:auto;font-size:13px;color:var(--muted);font-weight:400;white-space:nowrap}
+/* gantt simple */
+.gantt{padding:18px 18px 10px}
+.axis{position:relative;height:22px;font-size:12px;color:var(--muted);margin-bottom:4px}
+.axis span{position:absolute;top:0;white-space:nowrap;transform:translateX(-2px)}
+.track{position:relative}
+.grid{position:absolute;inset:0;pointer-events:none}
+.grid i{position:absolute;top:0;bottom:0;border-left:1px dashed var(--line)}
+.grid .today{border-left:2px solid var(--today)}
+.grid .today b{position:absolute;top:-2px;left:3px;font-size:10px;color:var(--today);font-style:normal}
+.row{position:relative;padding:6px 0 10px}
+.row .lbl{font-size:13px;font-weight:600;margin-bottom:4px}
+.row .lane{position:relative;height:14px}
+.seg{position:absolute;top:0;height:14px;border-radius:5px;border:1.5px solid var(--c);background:color-mix(in srgb,var(--c) 20%,transparent)}
+.seg{overflow:hidden}.seg i{display:block;height:100%;background:var(--c)}
+.cnt{font-weight:400;color:var(--muted);font-size:12px}
+.row.ms-row .lane{height:34px}
+.mslbl{top:16px;transform:translateX(-50%);font-size:11px;color:var(--muted)}
+.ms{position:absolute;top:1px;width:12px;height:12px;margin-left:-6px;transform:rotate(45deg);background:var(--c-hito)}
+.mslbl{position:absolute;font-weight:600;white-space:nowrap}
+.legend{font-size:13px;color:var(--muted);margin-top:8px}
+/* camino */
+.path{list-style:none;margin:0;padding:0}
+.path li{position:relative;padding:0 0 18px 30px}
+.path li::before{content:"";position:absolute;left:7px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--accent)}
+.path li::after{content:"";position:absolute;left:12px;top:20px;bottom:0;width:2px;background:var(--line)}
+.path li:last-child::after{display:none}
+.path li.est::before{background:var(--card);border:2px solid var(--accent)}
+.path .w{font-weight:700}
+.path .n{font-size:13px;color:var(--accent);font-weight:600}
+.list{margin:0;padding:0;list-style:none}
+.list li{display:flex;gap:14px;padding:10px 0;border-top:1px solid var(--line)}
+.list li:first-child{border-top:0}
+.list b{min-width:92px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+footer{margin-top:40px;color:var(--muted);font-size:13px;text-align:center}
+@media (max-width:560px){
+  h1{font-size:28px}
+  .events{grid-template-columns:1fr}
+  .task,.hito{padding:12px 14px;gap:12px}
+  .task .d{display:none}
+  .week-h{padding:10px 14px 6px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Konecta<span>.</span></h1>
+  <p class="sub">Plan hasta el lanzamiento · Pablo, Sebastián y Emilio · todo se decide entre los 3</p>
+
+  <div class="events" id="events"></div>
+  <div class="progress"><div class="bar"><i id="pbar"></i></div><span id="ptext"></span></div>
+  <div class="ojo"><b>⚠️ Ojo</b><ul id="ojo"></ul></div>
+
+  <h2>Qué hay que hacer</h2>
+  <div id="weeks"></div>
+
+  <h2>Vista rápida (Gantt)</h2>
+  <div class="card gantt" id="gantt"></div>
+
+  <h2>Camino a 2027</h2>
+  <div class="card"><ul class="path" id="camino"></ul></div>
+
+  <h2>Reuniones de los 3</h2>
+  <div class="card"><ul class="list" id="reuniones"></ul></div>
+
+  <h2>Falta definir</h2>
+  <div class="chips" id="pend"></div>
+
+  <footer>Tus ✓ se guardan en este navegador.</footer>
+</div>
+<script>
+const DATA = /*__DATA__*/null;
+(() => {
+const KEY = "konecta.simple.v1";
+let done = {};
+try { done = JSON.parse(localStorage.getItem(KEY)) || {}; } catch (e) {}
+const save = () => { try { localStorage.setItem(KEY, JSON.stringify(done)); } catch (e) {} };
+const $ = s => document.querySelector(s);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const ph = s => esc(s).replace(/\[[^\]]+\]/g, m => `<mark>${m.slice(1, -1)}</mark>`);
+const D = s => { const [y, m, d] = s.split("-").map(Number); return new Date(y, m - 1, d); };
+const DOW = ["dom","lun","mar","mié","jue","vie","sáb"], MES = ["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"];
+const fmt = s => { const d = D(s); return `${DOW[d.getDay()]} ${d.getDate()} ${MES[d.getMonth()]}`; };
+const fmtR = (a, b) => a === b ? fmt(a) : `${D(a).getDate()}${D(a).getMonth() !== D(b).getMonth() ? " " + MES[D(a).getMonth()] : ""} – ${D(b).getDate()} ${MES[D(b).getMonth()]}`;
+const now = new Date(), TODAY = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+const days = s => Math.round((D(s) - TODAY) / 864e5);
+const tasks = DATA.semanas.flatMap(s => s.tareas).filter(t => t[1] !== "hito");
+
+// eventos
+$("#events").innerHTML = DATA.eventos.map(e => {
+  const n = days(e.fecha);
+  const left = n > 1 ? `Faltan ${n} días` : n === 1 ? "¡Es mañana!" : n === 0 ? "¡Es hoy!" : "Ya pasó ✓";
+  return `<div class="card ev"><div class="when">${fmt(e.fecha)}</div><div class="name">${esc(e.nombre)}</div><div class="det">${ph(e.detalle)}</div><span class="left">${left}</span></div>`;
+}).join("");
+$("#ojo").innerHTML = DATA.ojo.map(o => `<li>${ph(o)}</li>`).join("");
+
+function progress() {
+  const n = tasks.filter(t => done[t[0]]).length;
+  $("#pbar").style.width = (n / tasks.length * 100) + "%";
+  $("#ptext").textContent = `${n} de ${tasks.length} listas`;
+}
+
+// semanas
+$("#weeks").innerHTML = DATA.semanas.map(s => {
+  const f = s.tareas.map(t => t[3]).sort()[0], l = s.tareas.map(t => t[4]).sort().pop();
+  const isNow = TODAY >= D(f) && TODAY <= D(l) && s === DATA.semanas.find(w => { const ff = w.tareas.map(t => t[3]).sort()[0], ll = w.tareas.map(t => t[4]).sort().pop(); return TODAY >= D(ff) && TODAY <= D(ll); });
+  return `<div class="card week${isNow ? " now" : ""}"><div class="week-h"><b>${esc(s.titulo)}${isNow ? '<span class="tag">ESTA SEMANA</span>' : ""}</b><span>${esc(s.rango)}</span></div>` +
+    s.tareas.map(([id, ln, name, a, b]) => ln === "hito"
+      ? `<div class="hito"><span class="dia"></span>${ph(name)}<span class="d">${fmt(a)}</span></div>`
+      : `<label class="task${done[id] ? " done" : ""}" style="--c:var(--c-${ln})"><input type="checkbox" data-id="${id}" ${done[id] ? "checked" : ""}><span class="t">${ph(name)}</span><span class="d">${fmtR(a, b)}</span><span class="dot" title="${esc(DATA.lineas.find(x => x.id === ln).nombre)}"></span></label>`
+    ).join("") + `</div>`;
+}).join("");
+document.querySelectorAll("#weeks input").forEach(c => c.addEventListener("change", () => {
+  if (c.checked) done[c.dataset.id] = 1; else delete done[c.dataset.id];
+  c.closest(".task").classList.toggle("done", c.checked); save(); progress(); gantt();
+}));
+
+// gantt
+const G0 = D("2026-09-22"), GN = 27;
+const pct = s => (D(s) - G0) / 864e5 / GN * 100;
+const pctEnd = s => pct(s) + 100 / GN;
+function gantt() {
+  const hitos = DATA.semanas.flatMap(s => s.tareas).filter(t => t[1] === "hito");
+  const ticks = ["2026-09-22", "2026-09-28", "2026-10-05", "2026-10-12"];
+  const tp = (TODAY - G0) / 864e5;
+  const grid = `<div class="grid">${ticks.map(t => `<i style="left:${pct(t)}%"></i>`).join("")}${tp >= 0 && tp < GN ? `<i class="today" style="left:${(tp + .5) / GN * 100}%"><b>hoy</b></i>` : ""}</div>`;
+  const msRow = `<div class="row ms-row"><div class="lbl">Fechas clave</div><div class="lane">${hitos.map(h => {
+    const x = pct(h[3]) + 50 / GN;
+    return `<span class="ms" style="left:${x}%"></span><span class="mslbl" style="left:${x}%">${esc(h[5] || "")}</span>`;
+  }).join("")}</div></div>`;
+  const rows = DATA.lineas.map(l => {
+    const ts = tasks.filter(t => t[1] === l.id);
+    const a = ts.map(t => t[3]).sort()[0], b = ts.map(t => t[4]).sort().pop(), n = ts.filter(t => done[t[0]]).length;
+    return `<div class="row" style="--c:var(--c-${l.id})"><div class="lbl">${esc(l.nombre)} <span class="cnt">${n}/${ts.length}</span></div><div class="lane">
+      <span class="seg" title="${fmtR(a, b)}" style="left:${pct(a)}%;width:${pctEnd(b) - pct(a)}%"><i style="width:${n / ts.length * 100}%"></i></span></div></div>`;
+  }).join("");
+  $("#gantt").innerHTML = `<div class="axis">${ticks.map(t => `<span style="left:${pct(t)}%">${D(t).getDate()} ${MES[D(t).getMonth()]}</span>`).join("")}</div>
+    <div class="track">${grid}${msRow}${rows}</div>
+    <div class="legend">Las barras se llenan a medida que marcan tareas.</div>`;
+}
+
+$("#camino").innerHTML = DATA.camino.map(([w, q, n]) => `<li class="${n === "estimado" ? "est" : ""}"><div class="w">${esc(w)}</div><div>${ph(q)}</div><div class="n">${esc(n)}</div></li>`).join("");
+$("#reuniones").innerHTML = DATA.reuniones.map(([a, b]) => `<li><b>${esc(a)}</b><span>${ph(b)}</span></li>`).join("");
+$("#pend").innerHTML = DATA.pendientes.map(p => `<mark>${esc(p.replace(/[\[\]]/g, ""))}</mark>`).join("");
+progress(); gantt();
+})();
+</script>
+</body>
+</html>
