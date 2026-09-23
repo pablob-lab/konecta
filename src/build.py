@@ -2,7 +2,7 @@
 """Genera index.html y konecta_plan.md desde una sola fuente de datos.
 Uso: python src/build.py  (desde la carpeta konecta)
 """
-import json, os
+import base64, json, os
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -112,7 +112,8 @@ def build():
             "ojo": OJO, "reuniones": REUNIONES, "pendientes": PENDIENTES}
     js = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
     tpl = open(os.path.join(ROOT, "src", "template.html"), encoding="utf-8").read()
-    out = {"index.html": tpl.replace("/*__DATA__*/null", js), "konecta_plan.md": md(), "README.md": README}
+    logo = "data:image/png;base64," + base64.b64encode(open(os.path.join(ROOT, "logo-konecta.png"), "rb").read()).decode()
+    out = {"index.html": tpl.replace("/*__DATA__*/null", js).replace("__LOGO__", logo), "konecta_plan.md": md(), "README.md": README}
     for name, content in out.items():
         with open(os.path.join(ROOT, name), "w", encoding="utf-8", newline="\n") as fh:
             fh.write(content)
